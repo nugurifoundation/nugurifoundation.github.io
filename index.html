@@ -24,7 +24,7 @@ layout: default
           <li class="nav-item"><a class="scrollto" href="#about">About</a></li>
           <li class="nav-item"><a class="scrollto" href="#join">Join Us</a></li>
           <li class="nav-item"><a class="scrollto" href="#contact">Contact</a></li>
-          <li class="nav-item last"><a class="scrollto highlight" href="#donate">Donate</a></li>
+          <!-- <li class="nav-item last"><a class="scrollto highlight" href="#donate">Donate</a></li> -->
         </ul><!--//nav-->
       </div><!--//navabr-collapse-->
     </nav><!--//main-nav-->
@@ -145,51 +145,6 @@ layout: default
   </div><!--//container-->
 </section><!--//join-->
 
-<!-- ******DONATE****** -->
-<section id="donate" class="donate section text-center">
-  <div class="container">
-    <div class="donate-inner">
-      <h2 class="title text-center">Donate</h2>
-      <div class="info">
-        <p><strong>Become a donor today.</strong><br>As a small grassroots organization, know that every dollar will have an immense impact on our ability to continue working towards our mission.</p>
-        {% if site.donorbox_campaign_name %}
-          <div class="donorbox text-center">
-            <iframe src="https://donorbox.org/embed/{{ site.donorbox_campaign_name }}" height="600px" width="100%" style="max-width:500px; min-width:310px" seamless="seamless" name="donorbox" frameborder="0" scrolling="no"></iframe>
-          </div>
-          {% if site.501c3 == true %}
-            <p>Contributions are tax deductible to the extent permitted by law.<br>{{ site.org_name }} is a 501(c)(3) organization.</p>
-          {% elsif site.fiscal_sponsor_name %}
-            <p>{{ site.org_name }} is fiscally sponsored by {{ site.fiscal_sponsor_name }}, a 501 (c)(3) tax exempt non-profit organization.</p>
-          {% endif %}
-        {% else %}
-        <div class="donorbox text-center">
-        </div>
-        <hr>
-        <p class="text-warning">Sorry, online donations are not available at this time <i class="fa fa-frown-o"></i></p>
-        <hr>
-        {% endif %}
-      </div><!--//info-->
-      <div class="cta-container">
-        <div class="speech-bubble">
-          <p class="intro">Your support means the world to us :)</p>
-          <div class="icon-holder  text-center"><i class="fa fa-smile-o"></i></div>
-        </div><!--//speech-bubble-->
-        <div class="btn-container  text-center">
-          <!--//You need to generate your own PayPal button if you choose to use Paypal - https://www.paypal.com/us/cgi-bin/?cmd=_donate-intro-outside -->
-          <!--PayPal generated code starts-->
-              <!--form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-              <input type="hidden" name="cmd" value="_s-xclick">
-              <input type="hidden" name="hosted_button_id" value="{{ site.paypal_button_id }}">
-              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-              <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-            </form-->
-            <!--//PayPal generated code ends-->
-
-        </div><!--//btn-container-->
-      </div><!--//cta-container-->
-    </div><!--//donate-inner-->
-  </div><!--//container-->
-</section><!--//how-->
 
 <!-- ******CONTACT****** -->
 <section id="contact" class="contact section has-pattern">
